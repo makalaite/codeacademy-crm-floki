@@ -11,11 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    if(DB::connection()->getDatabaseName())
-    {
-        echo "connected successfully to database ".DB::connection()->getDatabaseName();
-    }
+use App\model\CrmPersons;
 
-    return view('welcome');
+Route::get('/', function () {
+
+    return CrmPersons::get();
+});
+
+Route::get('/new-person', function (){
+
+    return CrmPersons::create([
+        'id' => Ramsey\Uuid\Uuid::uuid4(),
+        'name' => 'Agne',
+        'email' => 'agniukou@gmail.com',
+        'phone' => 37052526
+    ]);
 });
