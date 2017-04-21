@@ -20,7 +20,7 @@ class CreateCrmPersonsTable extends Migration {
 			$table->softDeletes();
 			$table->string('name', 45)->nullable();
 			$table->string('email', 45)->nullable();
-			$table->integer('phone')->nullable();
+			$table->string('phone', 255)->nullable();
 		});
 	}
 
