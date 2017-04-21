@@ -11,6 +11,7 @@ namespace App\model;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Ramsey\Uuid\Uuid;
 
 class CoreModel extends Model
 {
@@ -18,12 +19,13 @@ class CoreModel extends Model
 
     public $incrementing = false;
 
+
     protected static function boot()
     {
         parent::boot();
 
         static::creating(function ($model) {
-            $model->{$model->getKeyName()} = Uuid::generate()->string;
+            $model->{$model->getKeyName()} = Uuid::uuid4();
         });
     }
 }

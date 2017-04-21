@@ -13,7 +13,7 @@ class CrmPersonsController extends Controller {
 	 */
 	public function index()
 	{
-		return CrmPersons::get();
+		return CrmPersons::orderBy('created_at','asc')->get();
 
 	}
 
