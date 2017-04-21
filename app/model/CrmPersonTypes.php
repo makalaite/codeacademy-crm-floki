@@ -3,19 +3,18 @@
 namespace App\model;
 
 
-class CrmPersons extends CoreModel
+class CrmPersonTypes extends CoreModel
 {
     /**
      * Table name created
      * @var string
      */
-    protected $table = 'crm_persons';
+    protected $table = 'crm_person_types';
 
     /**
      * Fields will be manipulated
      * @var array
      */
 
-    protected $fillable = ['id', 'name', 'email', 'phone'];
+    protected $fillable = ['id', 'name', 'description'];
 }
-
