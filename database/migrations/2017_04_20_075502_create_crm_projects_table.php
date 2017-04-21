@@ -17,7 +17,7 @@ class CreateCrmProjectsTable extends Migration {
 			$table->integer('count', true);
 			$table->string('id', 36)->unique('id');
 			$table->timestamps();
-			$table->softDeletes()->default(DB::raw('CURRENT_TIMESTAMP'));
+			$table->softDeletes();
 			$table->string('client_id', 36)->index('fk_crm_projects_list_crm_clients1_idx');
 			$table->string('name')->nullable();
 			$table->string('type_id', 36)->index('fk_crm_projects_list_crm_projects_types1_idx');

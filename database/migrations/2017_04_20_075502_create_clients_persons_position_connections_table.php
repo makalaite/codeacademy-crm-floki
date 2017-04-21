@@ -17,7 +17,7 @@ class CreateClientsPersonsPositionConnectionsTable extends Migration {
 			$table->integer('count', true);
 			$table->string('id', 36)->unique('id');
 			$table->timestamps();
-			$table->softDeletes()->default(DB::raw('CURRENT_TIMESTAMP'));
+			$table->softDeletes();
 			$table->string('client_id', 36)->index('fk_clients_persons_position_connections_crm_clients_idx');
 			$table->string('person_id', 36)->index('fk_clients_persons_position_connections_crm_persons1_idx');
 			$table->string('position_id', 36)->index('fk_clients_persons_position_connections_crm_clients_postion_idx');

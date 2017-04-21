@@ -20,7 +20,7 @@ class CreateCrmProjectLoginsTable extends Migration {
 			$table->string('password')->nullable();
 			$table->string('login_url', 2000)->nullable();
 			$table->timestamps();
-			$table->softDeletes()->default(DB::raw('CURRENT_TIMESTAMP'));
+			$table->softDeletes();
 			$table->string('type_id', 45)->nullable()->index('fk_crm_project_logins_crm_project_login_types1_idx');
 		});
 	}

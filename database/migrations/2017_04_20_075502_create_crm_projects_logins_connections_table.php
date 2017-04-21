@@ -17,7 +17,7 @@ class CreateCrmProjectsLoginsConnectionsTable extends Migration {
 			$table->integer('count', true);
 			$table->string('id', 36)->unique('id');
 			$table->timestamps();
-			$table->softDeletes()->default(DB::raw('CURRENT_TIMESTAMP'));
+			$table->softDeletes();
 			$table->string('project_id', 36)->index('fk_crm_projects_logins_connections_crm_projects1_idx');
 			$table->string('login_id', 36)->index('fk_crm_projects_logins_connections_crm_project_logins1_idx');
 		});

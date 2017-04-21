@@ -17,7 +17,7 @@ class CreateCrmClientsTable extends Migration {
 			$table->integer('count', true);
 			$table->string('id', 36)->unique('id');
 			$table->timestamps();
-			$table->softDeletes()->default(DB::raw('CURRENT_TIMESTAMP'));
+			$table->softDeletes();
 			$table->string('title')->nullable();
 			$table->enum('juridical_fizical', array('J','F'))->nullable();
 		});

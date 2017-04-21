@@ -17,7 +17,7 @@ class CreateCrmProjectsPersonConnectionTable extends Migration {
 			$table->integer('count', true);
 			$table->string('id', 36)->unique('id');
 			$table->timestamps();
-			$table->softDeletes()->default(DB::raw('CURRENT_TIMESTAMP'));
+			$table->softDeletes();
 			$table->string('project_id', 36)->nullable()->index('fk_crm_prpjects_person_types_connection_crm_projects_list1_idx');
 			$table->string('person_id', 36)->nullable()->index('fk_crm_prpjects_person_types_connection_crm_persons1_idx');
 			$table->string('type_id', 36)->nullable()->index('fk_crm_prpjects_person_types_connection_crm_person_types1');

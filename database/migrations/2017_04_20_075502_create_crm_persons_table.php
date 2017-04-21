@@ -17,7 +17,7 @@ class CreateCrmPersonsTable extends Migration {
 			$table->integer('count', true);
 			$table->string('id', 36)->unique('id_UNIQUE');
 			$table->timestamps();
-			$table->softDeletes()->default(DB::raw('CURRENT_TIMESTAMP'));
+			$table->softDeletes();
 			$table->string('name', 45)->nullable();
 			$table->string('email', 45)->nullable();
 			$table->integer('phone')->nullable();
