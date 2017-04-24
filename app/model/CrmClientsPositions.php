@@ -10,7 +10,7 @@ class CrmClientsPositions extends CoreModel
      * Table name created
      * @var string
      */
-    protected $table = 'crm_positions';
+    protected $table = 'crm_clients_postions';
 
     /**
      * Fields will be manipulated

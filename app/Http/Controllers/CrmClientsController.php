@@ -1,25 +1,25 @@
 <?php namespace App\Http\Controllers;
 
-use App\model\CrmPersons;
+use App\model\CrmClients;
 use Illuminate\Routing\Controller;
 
-class CrmPersonsController extends Controller {
+class CrmClientsController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
-	 * GET /crmpersons
+	 * GET /crmclients
 	 *
 	 * @return Response
 	 */
-	public function index()
-{
-    return CrmPersons::orderBy('created_at','asc')->get();
+    public function index()
+    {
+        return CrmClients::orderBy('created_at','asc')->get();
 
-}
+    }
 
 	/**
 	 * Show the form for creating a new resource.
-	 * GET /crmpersons/create
+	 * GET /crmclients/create
 	 *
 	 * @return Response
 	 */
@@ -30,7 +30,7 @@ class CrmPersonsController extends Controller {
 
 	/**
 	 * Store a newly created resource in storage.
-	 * POST /crmpersons
+	 * POST /crmclients
 	 *
 	 * @return Response
 	 */
@@ -41,7 +41,7 @@ class CrmPersonsController extends Controller {
 
 	/**
 	 * Display the specified resource.
-	 * GET /crmpersons/{id}
+	 * GET /crmclients/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -53,7 +53,7 @@ class CrmPersonsController extends Controller {
 
 	/**
 	 * Show the form for editing the specified resource.
-	 * GET /crmpersons/{id}/edit
+	 * GET /crmclients/{id}/edit
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -65,7 +65,7 @@ class CrmPersonsController extends Controller {
 
 	/**
 	 * Update the specified resource in storage.
-	 * PUT /crmpersons/{id}
+	 * PUT /crmclients/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -77,7 +77,7 @@ class CrmPersonsController extends Controller {
 
 	/**
 	 * Remove the specified resource from storage.
-	 * DELETE /crmpersons/{id}
+	 * DELETE /crmclients/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response

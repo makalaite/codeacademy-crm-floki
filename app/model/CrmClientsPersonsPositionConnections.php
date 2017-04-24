@@ -10,7 +10,7 @@ class CrmClientsPersonsPositionConnections extends CoreModel
      * Table name created
      * @var string
      */
-    protected $table = 'crm_clients_persons_position_connections';
+    protected $table = 'clients_persons_position_connections';
 
     /**
      * Fields will be manipulated
