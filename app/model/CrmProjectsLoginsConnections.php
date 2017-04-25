@@ -16,4 +16,12 @@ class CrmProjectsLoginsConnections extends CoreModel
      */
 
     protected $fillable = ['id', 'project_id', 'login_id'];
+
+    public function projectIdData(){
+        return $this->hasOne(CrmProjects::class, 'id', 'project_id');
+    }
+
+    public function loginIdData(){
+        return $this->hasOne(CrmProjectLogins::class, 'id', 'login_id');
+    }
 }

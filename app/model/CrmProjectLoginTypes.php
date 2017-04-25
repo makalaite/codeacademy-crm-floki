@@ -16,5 +16,7 @@ class CrmProjectLoginTypes extends CoreModel
      */
 
     protected $fillable = ['id', 'name', 'description'];
+
+
 }
 

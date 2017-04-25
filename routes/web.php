@@ -1,6 +1,7 @@
 <?php
 
 use App\model\CrmClientsPersonsPositionConnections;
+use App\model\CrmProjectsLoginsConnections;
 
 /**
  * taking separate data from ClientsPersonsPositionsConnection
@@ -8,17 +9,22 @@ use App\model\CrmClientsPersonsPositionConnections;
 
 Route::get('/', function (){
 
-    return CrmClientsPersonsPositionConnections::with(['personalData', 'clientData', 'positionData'])->get();
+    return CrmProjectsLoginsConnections::with(['projectIdData', 'loginIdData'])->get();
 
-    return view('welcome');
+
 });
 
 
-
-Route::get('/data', function (){
+/* Route::get('/data', function (){
     return \App\model\CrmProjectsPersonConnection::with(['projectData', 'personData', 'typeIdData'])->get();
-});
+});*/
 
+
+
+
+/**
+ * functions for adding fake data
+ */
 
 
 Route::get('/persons', [
