@@ -13,7 +13,14 @@ class CrmClientsController extends Controller {
 	 */
     public function index()
     {
-        return CrmClients::orderBy('created_at','asc')->get();
+
+
+        $configuration = [
+            "example" => 'completeData',
+            'clients' => CrmClients::with(['projects'])->all()->appends(['is_company']),
+        ];
+
+        return view('data', $configuration);
 
     }
 

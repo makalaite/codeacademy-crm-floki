@@ -1,5 +1,9 @@
 <?php
 
+Route::get('/', function (){
+    return view('welcome');
+});
+
 Route::get('/persons', [
     'uses' => 'CrmPersonsController@index'
 ]);
@@ -7,7 +11,6 @@ Route::get('/persons', [
 Route::get('/generate-fake-data/persons/{count?}', [
     'uses' => 'CrmFakeDataController@generatePersons'
 ]);
-
 
 
 Route::get('/clients', [
@@ -19,7 +22,6 @@ Route::get('/generate-fake-data/clients/{count?}', [
 ]);
 
 
-
 Route::get('/clientsPositions', [
     'uses' => 'CrmClientsPositionsController@index'
 ]);
@@ -27,7 +29,6 @@ Route::get('/clientsPositions', [
 Route::get('/generate-fake-data/clientsPositions/{count?}', [
     'uses' => 'CrmFakeDataController@generateClientsPositions'
 ]);
-
 
 
 Route::get('/personTypes', [
@@ -39,7 +40,6 @@ Route::get('/generate-fake-data/personTypes/{count?}', [
 ]);
 
 
-
 Route::get('/clientsPersonsPositionConnections', [
     'uses' => 'CrmClientsPersonsPositionConnectionsController@index'
 ]);
@@ -49,7 +49,6 @@ Route::get('/generate-fake-data/clientsPersonsPositionConnections/{count?}', [
 ]);
 
 
-
 Route::get('/crmProjectTypes', [
     'uses' => 'CrmProjectTypesController@index'
 ]);
@@ -57,7 +56,6 @@ Route::get('/crmProjectTypes', [
 Route::get('/generate-fake-data/crmProjectTypes/{count?}', [
     'uses' => 'CrmFakeDataController@generateProjectTypes'
 ]);
-
 
 
 Route::get('/crmProjects', [
@@ -85,7 +83,6 @@ Route::get('/crmProjectLogins', [
 Route::get('/generate-fake-data/crmProjectLogins/{count?}', [
     'uses' => 'CrmFakeDataController@generateProjectLogins'
 ]);
-
 
 
 Route::get('/crmProjectsPersonConnection', [

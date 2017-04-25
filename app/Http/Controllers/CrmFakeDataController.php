@@ -169,6 +169,9 @@ class CrmFakeDataController extends Controller
         }
     }
 
+    /**
+     * @param int $count
+     */
 
     public function generateProjectsLoginsConnections (int $count=20)
     {
