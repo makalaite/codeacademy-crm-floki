@@ -11,26 +11,26 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5">
+    <splitter split-orientation="vertical" split-proportion="0.6969377">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.48706338">
+        <splitter split-orientation="horizontal" split-proportion="0.5672704">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+              <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/routes/web.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="391">
-                      <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+                    <state relative-caret-position="459">
+                      <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="CrmClientsController.php" pinned="false" current-in-tab="true">
+              <file leaf-file-name="CrmClientsController.php" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CrmClientsController.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="119">
-                      <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                    <state relative-caret-position="140">
+                      <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
                       <folding>
                         <element signature="e#39#64#0#PHP" expanded="true" />
                       </folding>
@@ -64,21 +64,31 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="CrmClients.php" pinned="false" current-in-tab="true">
+              <file leaf-file-name="CrmClients.php" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/app/model/CrmClients.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="354">
-                      <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+                    <state relative-caret-position="119">
+                      <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="CrmClientsPersonsPositionConnections.php" pinned="false" current-in-tab="false">
+              <file leaf-file-name="CrmClientsPersonsPositionConnections.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/model/CrmClientsPersonsPositionConnections.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="323">
-                      <caret line="19" column="72" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="72" />
+                    <state relative-caret-position="34">
+                      <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="CoreModel.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/app/model/CoreModel.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="238">
+                      <caret line="21" column="73" lean-forward="false" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
                       <folding />
                     </state>
                   </provider>
@@ -117,7 +127,7 @@
               <file leaf-file-name="CrmProjectsPersonConnectionController.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CrmProjectsPersonConnectionController.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="51">
+                    <state relative-caret-position="306">
                       <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
                       <folding />
                     </state>
@@ -203,12 +213,10 @@
         <option value="$PROJECT_DIR$/database/migrations/2017_04_20_075502_create_clients_persons_position_connections_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_04_20_075502_create_crm_clients_postions_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2017_04_20_075502_create_crm_persons_table.php" />
-        <option value="$PROJECT_DIR$/app/model/CoreModel.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CrmPersonsController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CrmClientsPositionsController.php" />
         <option value="$PROJECT_DIR$/app/model/CrmClientsPositions.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CrmClientsPersonsPositionConnectionsController.php" />
-        <option value="$PROJECT_DIR$/app/model/CrmClientsPersonsPositionConnections.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CrmProjectsController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CrmProjectLoginsController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CrmProjectTypesController.php" />
@@ -217,11 +225,13 @@
         <option value="$PROJECT_DIR$/app/model/CrmPersons.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CrmProjectsPersonConnectionController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CrmFakeDataController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/resources/views/data.blade.php" />
         <option value="$PROJECT_DIR$/app/model/CrmClients.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CrmClientsController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/model/CoreModel.php" />
+        <option value="$PROJECT_DIR$/app/model/CrmClientsPersonsPositionConnections.php" />
       </list>
     </option>
   </component>
@@ -544,12 +554,12 @@
       <workItem from="1492669724281" duration="13981000" />
       <workItem from="1492753515949" duration="23226000" />
       <workItem from="1493013053929" duration="20204000" />
-      <workItem from="1493099134997" duration="9910000" />
+      <workItem from="1493099134997" duration="13509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67321000" />
+    <option name="totallyTimeSpent" value="70920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -788,16 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/CoreModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="59" lean-forward="false" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
-          <folding>
-            <element signature="e#118#157#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2017_04_20_075502_create_crm_clients_postions_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -886,16 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CrmProjectLoginsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="e#39#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/CrmPersons.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -922,14 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -946,25 +928,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/CrmClientsPersonsPositionConnections.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CrmProjectLoginsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="72" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/CrmClients.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="238">
+          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="e#39#70#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CrmProjectsPersonConnectionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="306">
           <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
           <folding />
         </state>
@@ -972,11 +948,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CrmClientsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="140">
+          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
           <folding>
             <element signature="e#39#64#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/CrmClients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/CoreModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" column="73" lean-forward="false" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/CrmClientsPersonsPositionConnections.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

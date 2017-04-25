@@ -1,6 +1,11 @@
 <?php
 
+use App\model\CrmClientsPersonsPositionConnections;
+
 Route::get('/', function (){
+
+    return CrmClientsPersonsPositionConnections::with(['personalData', 'clientData', 'positionData'])->get();
+
     return view('welcome');
 });
 

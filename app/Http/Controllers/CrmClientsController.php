@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\model\CrmClients;
+use App\model\CrmClientsPersonsPositionConnections;
 use Illuminate\Routing\Controller;
 
 class CrmClientsController extends Controller {
@@ -13,11 +14,12 @@ class CrmClientsController extends Controller {
 	 */
     public function index()
     {
-
+        return CrmClients::with(['projects'])->get();
 
         $configuration = [
             "example" => 'completeData',
-            'clients' => CrmClients::with(['projects'])->all()->appends(['is_company']),
+            "clients" => CrmClients::with(['projects'])->get(),
+            // "personal" => CrmClientsPersonsPositionConnections::
         ];
 
         return view('data', $configuration);
