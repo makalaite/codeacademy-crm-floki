@@ -16,5 +16,17 @@ class CrmProjectsPersonConnection extends CoreModel
      */
 
     protected $fillable = ['id', 'project_id', 'person_id', 'type_id'];
+
+    public function projectData(){
+        return $this->hasOne(CrmProjects::class, 'id', 'project_id');
+    }
+
+    public function personData(){
+        return $this->hasOne(CrmPersons::class, 'id', 'person_id');
+    }
+
+    public function typeIdData(){
+        return $this->hasOne(CrmPersonTypes::class, 'id', 'type_id');
+    }
 }
 

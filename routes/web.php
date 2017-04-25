@@ -2,12 +2,24 @@
 
 use App\model\CrmClientsPersonsPositionConnections;
 
+/**
+ * taking separate data from ClientsPersonsPositionsConnection
+ */
+
 Route::get('/', function (){
 
     return CrmClientsPersonsPositionConnections::with(['personalData', 'clientData', 'positionData'])->get();
 
     return view('welcome');
 });
+
+
+
+Route::get('/data', function (){
+    return \App\model\CrmProjectsPersonConnection::with(['projectData', 'personData', 'typeIdData'])->get();
+});
+
+
 
 Route::get('/persons', [
     'uses' => 'CrmPersonsController@index'
