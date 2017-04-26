@@ -3,16 +3,22 @@
 use App\model\CrmClientsPersonsPositionConnections;
 use App\model\CrmProjectsLoginsConnections;
 
+Route::get('/',function (){
+    return view('main');
+});
+
+
+
 /**
  * taking separate data from ClientsPersonsPositionsConnection
  */
 
-Route::get('/', function (){
+/*Route::get('/', function (){
 
     return CrmProjectsLoginsConnections::with(['projectIdData', 'loginIdData'])->get();
 
 
-});
+});*/
 
 
 /* Route::get('/data', function (){
