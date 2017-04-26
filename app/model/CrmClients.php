@@ -21,8 +21,6 @@ class CrmClients extends CoreModel
 
     protected $appends = ['is_company'];
 
-    protected $with = ['projects'];
-
     public function projects(){
         return $this->hasMany(CrmProjects::class, 'client_id','id');
     }
@@ -36,7 +34,7 @@ class CrmClients extends CoreModel
 
 
     public function personal(){
-        return $this->hasMany(CrmClientsPersonsPositionConnections::class, 'client_id', 'person_id', 'position_id');
+        return $this->hasMany(CrmClientsPersonsPositionConnections::class, 'client_id', 'id');
 
     }
 }

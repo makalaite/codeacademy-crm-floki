@@ -7,8 +7,6 @@ Route::get('/',function (){
     return view('main');
 });
 
-
-
 /**
  * taking separate data from ClientsPersonsPositionsConnection
  */

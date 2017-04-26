@@ -11,10 +11,23 @@ class CrmProjectsController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function index()
-	{
-        return CrmProjects::orderBy('created_at','asc')->get();
-	}
+    public function index()
+    {
+        $configuration = [];
+
+        $configuration['project'] = CrmProjects::with(['client', 'type', 'personal'])->get()->toArray();
+        $configuration['totalCount'] = sizeof($configuration['project']);
+
+
+        dd($configuration);
+
+        return view('content.projects', $configuration);
+        //CrmClients::with(['projects'])->get();
+
+
+        return view('data', $configuration);
+
+    }
 
 	/**
 	 * Show the form for creating a new resource.
